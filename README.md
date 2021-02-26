@@ -1,8 +1,4 @@
-<div>
-	<img align="right" width="150" src="images/qbranch_logo.gif">
-</div>
-
-# _[B2B LE Product Video Player](https://democomponents.qlabs.sfdc.sh/#/demo-component-detail/a012M00000iPTO8QAO)_
+# _[B2B LE Product Video Player]_
 
 #### _Jazz up your product detail pages by adding videos!_
 
@@ -101,8 +97,6 @@ Profile: System Administration
       		Product Video I18N
 
 				Grant Read/Write access to all fields
-	
-	Add the B2B Promotion tab as a navigation entry to the B2B LE Commerce Admin app
 
 ### Page Layout changes
 
@@ -113,27 +107,27 @@ Update the Product page layout to include the Product Videos related list:
 <br/>
 <br/>
 
-<img src="images/VideoPlayer1.PNG" height=350>
+<img src="images/VideoPlayer1.PNG" height=300>
 
 ### Picklist Value Sets
 
-The B2B Product Video Locales picklist value set is used by the Language pick list field in the Product Video and Product Video I18N objects:
+The B2B Product Video **Locales** picklist value set is used by the **Language** picklist field in the **Product Video** and **Product Video I18N** objects:
 
 <img src="images/VideoPlayer19.PNG" height=350>
 
-Update B2B Product Video Locales to include any additional languages and locales needed for your store users.
+Update the **B2B Product Video Locales** picklist value set to include any additional languages and locales needed for your store users.
 
 <img src="images/VideoPlayer20.PNG" height=200>
 
-When adding a new Locale, the Value must be the display version of the language (ex:Spanish), and the API Name must be the locale code (ex: es):
+When adding a new **locale**, the **Value** must be the **display version** of the language (ex: Spanish), and the **API Name** must be the **locale code** (ex: es):
 
 <img src="images/VideoPlayer21.PNG" height=300>
 
-When adding a new locale, enter the display version of the locale in the Add Picklist Values box:
+Click **[New]**.  Enter the **display version** of the locale in the Add Picklist Values box:
 
 <img src="images/VideoPlayer22.PNG" height=400>
 
-After saving the new value(s), edit them and change the API Name to the location code:
+After saving the new value(s), edit them and change the **API Name** to the **location code**:
 
 <img src="images/VideoPlayer23.PNG" height=300>
 
@@ -199,7 +193,7 @@ For the **End Date**, if your video will never expire, enter a date far out into
 
 For **Type**, choose **YouTube** for a YouTube video and enter the video Id in the **YouTube Video Id** field:
 
-<img src="images/VideoPlayer3.PNG" height="500">
+<img src="images/VideoPlayer4.PNG" height="500">
 
 Be very careful to enter the video ID exactly.  In this example, the Id actually has a hyphen at the beginning.
 
@@ -207,11 +201,11 @@ I’ll go ahead and **[Save]** the new record.
 
 There are now two videos associated with the current product:
 
-<img src="images/VideoPlayer5.PNG" height="200">
+<img src="images/VideoPlayer5.PNG" height="150">
 
 When I refresh the detail page for that product in the store, the video player component displays the videos in an accordion layout by default.  I’ll show you how you can change that later.
 
-<img src="images/VideoPlayer6.1.PNG" height="600">
+<img src="images/VideoPlayer6.1.png" height="600">
 
 I see that the two videos are displayed in the correct order.
 
@@ -220,7 +214,7 @@ The **Title** appears above the video, and the **Description** is displayed unde
 
 ### Changing the Display Options of the Component
 
-The video player component comes with several configuration options that enable you to control how videos are displayed in the store.  I’ll show you how to update them within Experience Builder.
+The video player component comes with several configuration options that enable you to control how videos are displayed in the store.  I’ll show you how to update them within **Experience Builder**.
 
 In the store’s community, I’ve opened the **Product Detail** page.  When I click on the **B2B LE Video Player** component in the layout, the configuration options are shown:
 
@@ -236,7 +230,7 @@ I’ll publish my changes.
 
 When I go back to the store and refresh the product detail page, the product videos now display as a series of tabs:
 
-<img src="images/VideoPlayer12.1.PNG" height="500">
+<img src="images/VideoPlayer12.1.png" height="500">
 
 ### Using Hosted Resources
 
@@ -280,7 +274,7 @@ To create a translation record, open an existing Product Video record.
 
 Scroll down so that you can see the **Product Video I18Ns** related list:
 
-<img src="images/VideoPlayer7.PNG" height="400">
+<img src="images/VideoPlayer7.PNG" height="300">
 
 Click **[New]**
 
@@ -296,7 +290,7 @@ I’ll go ahead and click **[Save]**.
  
 I’ve logged into the Store as a user whose language is **Spanish**.  When I refresh the detail page for that product, I now see the **Description** displayed in Spanish:
 
-<img src="images/VideoPlayer9.1.PNG" height="500">
+<img src="images/VideoPlayer9.1.png" height="500">
 
 ---
 
