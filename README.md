@@ -1,4 +1,4 @@
-# _[B2B LE Product Video Player]_
+# _B2B LE Product Video Player_
 
 #### _Jazz up your product detail pages by adding videos!_
 
