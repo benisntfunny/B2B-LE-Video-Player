@@ -5,6 +5,9 @@
 **/staticresources/**
 .localdevserver
 .sfdx
+<<<<<<< HEAD
 .vscode
+=======
+>>>>>>> upstream/main
 
 coverage/

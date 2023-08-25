@@ -3,6 +3,7 @@
 **/lwc/**/*.json
 **/lwc/**/*.svg
 **/lwc/**/*.xml
+<<<<<<< HEAD
 **/aura/**/*.auradoc
 **/aura/**/*.cmp
 **/aura/**/*.css
@@ -14,3 +15,6 @@
 **/aura/**/*.xml
 **/aura/**/*.app
 .sfdx
+=======
+.sfdx
+>>>>>>> upstream/main

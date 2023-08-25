@@ -16,6 +16,13 @@ export default class YouTubePlayerRecordWrapper extends LightningElement {
     record;
 
     renderedCallback() {
+<<<<<<< HEAD
+=======
+        console.log('YouTubePlayerRecordWrapper - inside renderedCallback()');
+        console.log('fieldName: ' + this.fieldName);
+        console.log('objectApiName: ' + this.objectApiName);
+        console.log('recordId: ' + this.recordId);
+>>>>>>> upstream/main
     }
 
     get youTubeId() {
