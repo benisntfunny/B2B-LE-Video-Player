@@ -37,3 +37,6 @@ $RECYCLE.BIN/
 .history/
 .vscode/
 scripts/
+.sf
+.sfdx
+.husky

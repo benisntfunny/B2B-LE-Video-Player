@@ -8,13 +8,7 @@ public with sharing class ProductVideoController {
     
     @AuraEnabled(Cacheable=true)
     public static String getVideos(String recordId, String maxNumVideos, String locale){
-
-        System.debug('ProductVideoController - getVideos() begin');
-
-        System.debug('User language code: ' + UserInfo.getLanguage());
-
-        System.debug('locale: ' + locale);
-
+        
         List<ProductVideo> pvList = new List<ProductVideo>();
 
         Date currentDate = Date.today();
@@ -22,8 +16,6 @@ public with sharing class ProductVideoController {
         Integer limitValue = Integer.valueOf(maxNumVideos);
 
         String localePrefix = locale.substring(0,2);
-
-        System.debug('localePrefix: ' + localePrefix);
 
         String likeValue = localePrefix + '%';
 
@@ -41,8 +33,6 @@ public with sharing class ProductVideoController {
         limit :limitValue 
         ];
 
-        System.debug('pvObjList: ' + JSON.serialize(pvObjList));
-
         for(Product_Video__c pvObj : pvObjList) {
 
             ProductVideo pv = new ProductVideo();
@@ -55,7 +45,7 @@ public with sharing class ProductVideoController {
 
             if(locale == pvObj.Language__c) {
                 // We are good to go
-                System.debug('matching language found with parent record');
+               // System.debug('matching language found with parent record');
             }
             else {
                 // See if there is a translation for the user's specific locale
@@ -64,8 +54,6 @@ public with sharing class ProductVideoController {
 
                 for(Product_Video_I18N__c pi18n : pvObj.Product_Video_I18Ns__r) {
                     if(locale == pi18n.Language__c) {
-
-                        System.debug('exact match locale found with I18N record');
 
                         pv.title = pi18n.Title__c;
                         pv.description = pi18n.Description__c;
@@ -81,8 +69,6 @@ public with sharing class ProductVideoController {
 
                         if(localePrefix == pi18n.Language__c.substring(0,2)) {
 
-                            System.debug('partial match locale found with I18N record');
-
                             pv.title = pi18n.Title__c;
                             pv.description = pi18n.Description__c;
                             translationFound = true;
@@ -94,11 +80,7 @@ public with sharing class ProductVideoController {
 
             pvList.add(pv);
         }
-
-        System.debug('total recs found = ' + pvList.size());
-
-        System.debug('ProductVideoController - getVideos() exit');
-
+       
         return JSON.serialize(pvList);
     }
 

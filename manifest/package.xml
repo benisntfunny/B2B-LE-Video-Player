@@ -42,7 +42,7 @@
         <name>CustomTab</name>
     </types>
     <types>
-        <members>Product_Video_Record_Page</members>
+        <members>Revision_Video_Layout</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -78,5 +78,5 @@
         <members>YouTube_widget_api</members>
         <name>StaticResource</name>
     </types>
-    <version>49.0</version>
+    <version>53.0</version>
 </Package>

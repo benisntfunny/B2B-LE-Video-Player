@@ -24,10 +24,6 @@ export default class ProductVideoRecord extends LightningElement {
     }
 
     renderedCallback() {
-        console.log('productVideoRecord - inside ctor');
-        console.log('youTubeId = ' + this.youTubeId);
-        console.log('type = ' + this.type);
-        console.log('videoUri = ' + this.videoUri);
     }
     
     get isYouTube() {

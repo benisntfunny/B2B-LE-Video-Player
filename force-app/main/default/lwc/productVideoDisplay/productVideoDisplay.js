@@ -22,7 +22,11 @@ export default class ProductVideoDisplay extends LightningElement {
 
     constructor() {
         super();
+<<<<<<< HEAD
+  
+=======
         console.log('USER_LOCALE: ' + USER_LOCALE);
+>>>>>>> upstream/main
     }
 
     renderedCallback() {
@@ -31,11 +35,17 @@ export default class ProductVideoDisplay extends LightningElement {
 
     @wire(getVideos, {recordId: '$recordId', maxNumVideos: '$maxNumVideos', locale: '$locale'})
 	loadVideos(result) {
+<<<<<<< HEAD
+
+        
+		if (result.data) {
+=======
         console.log('inside loadVideos()');
         console.log(result);
         
 		if (result.data) {
             console.log('success!');
+>>>>>>> upstream/main
 
             this.videos = JSON.parse(result.data);
 
